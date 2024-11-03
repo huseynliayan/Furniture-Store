@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Корзина</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="title">Интерьер</div>
+      <div class="menu">
+        <span class="catalog">Каталог</span>
+        <span class="orders">Заказы</span>
+      </div>
+    </div>
+    <div class="cartHeader">
+      <span id="productLabel">Товар</span>
+      <span id="quantityLabel">К-во</span>
+    </div>
+    <div id="bin">
+      <div id="cartList"></div>
+
+      <form action="" id="sendForm">
+        <h3>Оформление заказа</h3>
+        <input type="text" placeholder="Имя Фамилия" required />
+        <input type="tel" placeholder="+994 55 555 55 55" required />
+        <input type="text" placeholder="Адрес доставки" required />
+        <span id="totalPrice"></span>
+        <button type="submit">Оформить заказ</button>
+      </form>
+    </div>
+    <div id="buttons">
+        <button id="clear">Очистить корзину</button>
+        <button class="catalog">Продолжить покупки</button>
+    </div>
+
+    <script src="./second.js"></script>
+  </body>
+</html>
